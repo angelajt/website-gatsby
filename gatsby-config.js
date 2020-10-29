@@ -1,17 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `Angela Traugott`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Angela Traugott`,
+      summary: `is a Anglea.`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Angla`,
+    siteUrl: `http://angelajt.com/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `angelajtc`
+      // instagram: `angelajt`,
     },
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `Trispace`,
+          `Playfair Display`,
+          `Space Mono`,
+          // `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
+        ],
+        display: 'swap',
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
