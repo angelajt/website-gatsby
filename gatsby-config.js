@@ -1,15 +1,16 @@
 module.exports = {
   siteMetadata: {
-    title: `Angela Traugott`,
+    title: `Angela`,
+    blogTitle: `Angela's Blog`,
     author: {
       name: `Angela Traugott`,
-      summary: `is a Anglea.`,
+      summary: `. `,
     },
-    description: `Angla`,
+    description: `Angela`,
     siteUrl: `http://angelajt.com/`,
     social: {
-      twitter: `angelajtc`
-      // instagram: `angelajt`,
+      twitter: `angelajtc`,
+      instagram: `angelajt`,
     },
   },
   plugins: [
@@ -17,8 +18,10 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Martel`,
+          `Limelight`,
           `Trispace`,
-          `Playfair Display`,
+          `Playfair Display\:300,400,500,600,700,800,900`,
           `Space Mono`,
           // `source sans pro\:300,400,400i,700` // you can also specify font weights and styles
         ],

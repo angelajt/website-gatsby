@@ -17,9 +17,11 @@ const SEO = ({ description, lang, meta, title }) => {
         site {
           siteMetadata {
             title
+            blogTitle
             description
             social {
               twitter
+              instagram
             }
           }
         }
