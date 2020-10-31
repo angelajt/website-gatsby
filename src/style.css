@@ -27,9 +27,10 @@
   --spacing-20: 5rem;
   --spacing-24: 6rem;
   --spacing-32: 8rem;
-  --fontFamily-heading: "Trispace", Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
+  --fontFamily-heading: Montserrat, system-ui, -apple-system, BlinkMacSystemFont,
   "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --fontFamily-details: "Trispace";
   --fontFamily-body: "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-body);
@@ -56,10 +57,10 @@
   --fontSize-7: 2.986rem;
   --color-primary: #f5ac9a;
   --color-text: #474a4e;
-  --color-text-light: #4f5969;
+  --color-text-light: #929697;
   --color-heading: #1a202c;
   --color-heading-black: black;
-  --color-accent: #d1dce5;
+  --color-accent: #e5d1d1;
 }
 
 /* HTML elements */
@@ -91,6 +92,11 @@ hr {
   background: var(--color-accent);
   height: 1px;
   border: 0;
+}
+
+small {
+  color: var(--color-text-light);
+  font-family: var(--fontFamily-details);
 }
 
 /* Heading */
@@ -302,13 +308,15 @@ a:focus {
   border-radius: 100%;
 }
 
+
 .blog-post header h1 {
   margin: var(--spacing-0) var(--spacing-0) var(--spacing-4) var(--spacing-0);
 }
 
 .blog-post header p {
   font-size: var(--fontSize-2);
-  font-family: var(--font-heading);
+  font-family: var(--fontFamily-details);
+  color: var(--color-text-light);
 }
 
 .blog-post-nav ul {
@@ -318,6 +326,15 @@ a:focus {
 .gatsby-highlight {
   margin-bottom: var(--spacing-8);
 }
+
+.time {
+  color: var(--color-accent);
+}
+
+.copyright {
+  font-family: var(--fontFamily-details)
+}
+
 
 /* Media queries */
 
