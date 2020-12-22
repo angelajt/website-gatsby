@@ -1,12 +1,13 @@
 # personal website
 
-this is a personal website i'm building for fun, based on the [gatsby starter blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog).
+this is a personal website i'm building for fun, based on the [gatsby starter blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog). right now the website's not online yet, but it will be located at angelajt.com.
 
 ## 🖋️ currently working on
 - adding tags to blog posts
 
 ## 🛠️ need to fix
 - [ ] tag pages don't generate for posts with multiple tags
+- [ ] tags look super ugly right now tbh (edit in styles.css)
 
 ## 💡 ideas for the future
 - replace "Twitter" etc. buttons with icons
