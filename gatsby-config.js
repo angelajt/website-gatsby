@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Angela`,
+    title: `Angela Traugott`,
     blogTitle: `Angela's Blog`,
     author: {
       name: `Angela Traugott`,
@@ -11,6 +11,7 @@ module.exports = {
     social: {
       twitter: `angelajtc`,
       instagram: `angelajt`,
+      github: `angelajt`,
     },
   },
   plugins: [
@@ -18,6 +19,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
         fonts: [
+          `Lora`,
           `Inconsolata`,
           `Martel`,
           `Limelight`,

@@ -31,7 +31,7 @@
   "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --fontFamily-details: "Trispace";
-  --fontFamily-body: "Merriweather", "Georgia", Cambria, "Times New Roman",
+  --fontFamily-body: "Lora", "Merriweather", "Georgia", Cambria, "Times New Roman",
     Times, serif;
   --font-body: var(--fontFamily-body);
   --font-heading: var(--fontFamily-heading);
@@ -193,9 +193,9 @@ li > p {
   margin-bottom: calc(var(--spacing-8) / 2);
 }
 
-li *:last-child {
+/* li *:last-child {
   margin-bottom: var(--spacing-0);
-}
+} */
 
 li > ul {
   margin-left: var(--spacing-8);
@@ -233,6 +233,7 @@ table thead tr th {
   border-bottom: 1px solid var(--color-accent);
 }
 
+
 /* Link */
 
 a {
@@ -242,6 +243,7 @@ a {
 a:hover,
 a:focus {
   text-decoration: none;
+  transition: 0.5s;
 }
 
 /* Custom classes */
@@ -332,7 +334,55 @@ a:focus {
 }
 
 .copyright {
-  font-family: var(--fontFamily-details)
+  font-family: var(--fontFamily-details);
+}
+
+.post-content {
+  margin-top: var(--spacing-16);
+}
+
+.bio-links {
+  margin-top: 5px;
+}
+
+.bio-links a {
+  border: 2px solid var(--color-accent);
+  border-radius: 10%;
+  padding: 5px;
+  text-decoration: none;
+  color: var(--color-accent);
+  font-family: var(--fontFamily-details);
+  transition: 0.5s;
+}
+
+.bio-links a:hover {
+  background-color: var(--color-accent);
+  color: white;
+  transition: 0.5s;
+}
+
+.tags {
+  margin-bottom: 0;
+  margin-top: 10px;
+  display: inline-flex;
+  font-size: 80%;
+  font-family: var(--fontFamily-details);
+  color: var(--color-accent);
+}
+
+.tags li {
+  border-radius: 20%;
+  border: 2px solid var(--color-accent);
+  padding: 2px 6px;
+  margin-right: 5px;
+  margin-bottom: 0px;
+  list-style: none;
+} 
+
+.tags li:hover {
+  background: var(--color-accent);
+  color: white;
+  transition: 0.5s;
 }
 
 

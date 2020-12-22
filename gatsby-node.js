@@ -7,6 +7,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   // Define a template for blog post
   const blogPost = path.resolve(`./src/templates/blog-post.js`)
 
+  // Define a template for tagged page
+  const taggedPage = path.resolve("src/templates/tagged.js")
+
+
   // Get all markdown blog posts sorted by date
   const result = await graphql(
     `
@@ -19,6 +23,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             id
             fields {
               slug
+            }
+            frontmatter {
+              tags
             }
           }
         }
@@ -56,6 +63,33 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
       })
     })
   }
+
+  var uniq = arrArg => {
+    return arrArg.filter((elem, pos, arr) => {
+      return arr.indexOf(elem) == pos
+    })
+  }
+
+  let tegs = []
+  // Iterate through each post, putting all found tags into `tags`
+
+  posts.forEach(thing => {
+    if (thing.frontmatter.tags) {
+      tegs = tegs.concat(thing.frontmatter.tags)
+    }
+  })
+  // Eliminate duplicate tags
+  tegs = uniq(tegs)
+
+  tegs.forEach(tag => {
+    createPage({
+      path: `/tagged/${tag}/`,
+      component: taggedPage,
+      context: {
+        tag,
+      },
+    })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
@@ -106,6 +140,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       title: String
       description: String
       date: Date @dateformat
+      tags: String
     }
 
     type Fields {

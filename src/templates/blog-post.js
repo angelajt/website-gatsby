@@ -4,11 +4,13 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Tags from "../components/tags"
 
 const BlogPostTemplate = ({ data, location }) => {
   const post = data.markdownRemark
   const blogTitle = data.site.siteMetadata?.blogTitle || `Title`
   const { previous, next } = data
+  const tags = post.frontmatter.tags || []
 
   return (
     <Layout location={location} title={blogTitle}>
@@ -25,7 +27,10 @@ const BlogPostTemplate = ({ data, location }) => {
           <h1 itemProp="headline">{post.frontmatter.title}</h1>
           <p>{post.frontmatter.date} <span className="time">/ {post.frontmatter.time}</span></p>
         </header>
-        <section
+        <div>
+          <Tags>{tags}</Tags>
+        </div>
+        <section class="post-content"
           dangerouslySetInnerHTML={{ __html: post.html }}
           itemProp="articleBody"
         />
@@ -87,6 +92,7 @@ export const pageQuery = graphql`
         date: date(formatString: "MMMM DD, YYYY")
         time: date(formatString: "HH:mm")
         description
+        tags
       }
     }
     previous: markdownRemark(id: { eq: $previousPostId }) {
