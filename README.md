@@ -1,5 +1,7 @@
 # personal website
 
+this is a personal website i'm building for fun, based on the [gatsby starter blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog).
+
 ## 🖋️ currently working on
 - adding tags to blog posts
 
