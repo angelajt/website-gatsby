@@ -371,15 +371,20 @@ a:focus {
 }
 
 .tags li {
-  border-radius: 20%;
-  border: 2px solid var(--color-accent);
-  padding: 2px 6px;
   margin-right: 5px;
   margin-bottom: 0px;
   list-style: none;
-} 
+}
 
-.tags li:hover {
+.tags a { 
+  border-radius: 20%;
+  border: 2px solid var(--color-accent);
+  padding: 4px 6px;
+  text-decoration: none;
+  color: var(--color-accent);
+}
+
+.tags a:hover {
   background: var(--color-accent);
   color: white;
   transition: 0.5s;
