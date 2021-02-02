@@ -16,7 +16,7 @@ const Layout = ({ location, title, children }) => {
     )
   } else {
     header = (
-      <Link className="header-link-blog" to="/blog/">
+      <Link className="header-link-blog" to="/">
         {title}
       </Link>
     )
