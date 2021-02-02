@@ -20,3 +20,9 @@ for future reference
 - [brittanychiang.com](https://brittanychiang.com/)
 - [vihan.org](https://vihan.org/)
 - [tdpain.net](https://www.tdpain.net)
+
+# how to update
+1. edit the stuff you want here in this directory
+2. make test
+3. look at http://localhost:8000
+4. make deploy
