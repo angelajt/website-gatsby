@@ -41,12 +41,13 @@
   --fontWeight-bold: 700;
   --fontWeight-extrabold: 800;
   --fontWeight-black: 900;
-  --fontSize-root: 16px;
+  --fontSize-root: 18px;
   --lineHeight-none: 1;
   --lineHeight-tight: 1.1;
   --lineHeight-normal: 1.5;
   --lineHeight-relaxed: 1.625;
   /* 1.200 Minor Third Type Scale */
+  /*
   --fontSize-0: 0.833rem;
   --fontSize-1: 1rem;
   --fontSize-2: 1.2rem;
@@ -55,6 +56,18 @@
   --fontSize-5: 2.074rem;
   --fontSize-6: 2.488rem;
   --fontSize-7: 2.986rem;
+  */
+  
+  /* 1.250 Major Third Type Scale */
+  --fontSize-0: 0.8rem;
+  --fontSize-1: 1rem;
+  --fontSize-2: 1.25rem;
+  --fontSize-3: 1.563rem;
+  --fontSize-4: 1.953rem;
+  --fontSize-5: 2.441rem;
+  --fontSize-6: 3.052rem;
+  --fontSize-7: 3.815rem;
+
   --color-primary: #f5ac9a;
   --color-text: #474a4e;
   --color-text-light: #929697;
@@ -390,6 +403,18 @@ a:focus {
   transition: 0.5s;
 }
 
+.table-of-contents a {
+    color: var(--color-text-light);
+    font-family: var(--fontFamily-details);
+}
+
+.table-of-contents li {
+    list-style-type: none;
+}
+
+.table-of-contents li ul {
+    font-size: var(--fontSize-0); 
+}
 
 /* Media queries */
 
