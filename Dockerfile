@@ -1,4 +1,2 @@
-FROM angelat/gatsby:onbuild as build
-
-FROM gatsbyjs/gatsby
-COPY --from=build /app/public /pub
+FROM angelat/gatsby:vanilla
+COPY public /pub
