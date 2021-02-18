@@ -7,7 +7,7 @@ this is a personal website i'm building for fun, based on the [gatsby starter bl
 
 ## 🛠️ need to fix
 - [ ] tag pages don't generate for posts with multiple tags
-- [ ] tags look super ugly right now tbh (edit in styles.css)
+- [ ] tag pages need a styling revamp
 
 ## 💡 ideas for the future
 - replace "Twitter" etc. buttons with icons
