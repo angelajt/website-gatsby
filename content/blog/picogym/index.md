@@ -22,7 +22,7 @@ Flags (the final solutions for the challenges) are submitted in the format `pico
 ---
 ### vault-door-training
 
-> Your mission is to enter Dr. Evil's laboratory and retrieve the blueprints for his Doomsday Project. The laboratory is protected by a series of locked vault doors. Each door is controlled by a computer and requires a password to open. Unfortunately, our undercover agents have not been able to obtain the secret passwords for the vault doors, but one of our junior agents obtained the source code for each vault's computer! You will need to read the source code for each level to figure out what the password is for that vault door. As a warmup, we have created a replica vault in our training facility. The source code for the training vault is here: [VaultDoorTraining.java]
+> Your mission is to enter Dr. Evil's laboratory and retrieve the blueprints for his Doomsday Project. The laboratory is protected by a series of locked vault doors. Each door is controlled by a computer and requires a password to open. Unfortunately, our undercover agents have not been able to obtain the secret passwords for the vault doors, but one of our junior agents obtained the source code for each vault's computer! You will need to read the source code for each level to figure out what the password is for that vault door. As a warmup, we have created a replica vault in our training facility. The source code for the training vault is here: `[VaultDoorTraining.java]`
 
 #### Solution
 
@@ -38,6 +38,100 @@ There's a *lot* going on here, but the big glaring thing here is that **the enti
 
 `picoCTF{w4rm1ng_Up_w1tH_jAv4_eec0716b713}`
 
+---
+
+### vault-door-1
+> This vault uses some complicated arrays! I hope you can make sense of it, special agent. The source code for this vault is here: `[VaultDoor1.java]`
+
+#### Solution
+
+![vault-door-1.png](vault-door-1.png)
+
+The code that checks the password in this file is a bit more complicated, but this challenge is still pretty straightforward! You don't even really need to be familiar with Java (I definitely am not) to understand what to do.
+
+Since most programming languages tend to count the first item in a sequence as the ["zero"th item](https://en.wikipedia.org/wiki/Zero-based_numbering), `password.charAt(0)  == 'd'` probably means that the first character in the password is the letter `d`. That means the second character is the number `3`, since `password.charAt(1)  == '3'`. So the goal of this challenge is to unscramble the password by going in order from characters 0 through 31.
+
+I was tempted to just do this unscrambling manually, but I decided not to because it sounded super boring and tedious. Instead I decided to write a Python script that would do this unscrambling for me (which turned out to take way longer than a manual unscrambling would have taken... but at least it wasn't boring!). 
+
+First, I made a file called `vd1.txt` to store the lines that contain the characters in the password:
+
+```
+password.charAt(0)  == 'd' &&
+password.charAt(29) == '3' &&
+password.charAt(4)  == 'r' &&
+password.charAt(2)  == '5' &&
+password.charAt(23) == 'r' &&
+password.charAt(3)  == 'c' &&
+password.charAt(17) == '4' &&
+password.charAt(1)  == '3' &&
+password.charAt(7)  == 'b' &&
+password.charAt(10) == '_' &&
+password.charAt(5)  == '4' &&
+password.charAt(9)  == '3' &&
+password.charAt(11) == 't' &&
+password.charAt(15) == 'c' &&
+password.charAt(8)  == 'l' &&
+password.charAt(12) == 'H' &&
+password.charAt(20) == 'c' &&
+password.charAt(14) == '_' &&
+password.charAt(6)  == 'm' &&
+password.charAt(24) == '5' &&
+password.charAt(18) == 'r' &&
+password.charAt(13) == '3' &&
+password.charAt(19) == '4' &&
+password.charAt(21) == 'T' &&
+password.charAt(16) == 'H' &&
+password.charAt(27) == 'f' &&
+password.charAt(30) == 'b' &&
+password.charAt(25) == '_' &&
+password.charAt(22) == '3' &&
+password.charAt(28) == '6' &&
+password.charAt(26) == 'f' &&
+password.charAt(31) == '0'
+```
+
+Then, I wrote a Python script called `vd1solution.py`:
+
+```python
+# regex
+import re
+# natural sorting
+from natsort import natsorted
+
+# open the file with the lines we want to sort
+file = open("vd1.txt", "r")
+
+# store the file in a variable
+lines = file.read()
+
+# store the lines as a list of strings
+linelist = lines.splitlines()
+
+# sort the list in numerical order
+sortedlines = natsorted(linelist)
+
+# make an empty list for the characters in the flag
+flag = []
+
+# find all characters in sortedlines that are 
+# inside quotes (using regex), and append them to 
+# the list of characters in the flag
+for l in sortedlines:
+    character = re.search(r"\w(?=')", l)
+    flag.append(character.group())
+
+# print the flag as a string
+print("".join(flag))
+```
+
+```bash
+$ python3 vd1solution.py
+d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0
+```
+
+#### Flag
+
+`picoCTF{d35cr4mbl3_tH3_cH4r4cT3r5_ff63b0}`
 
 ## General Skills
 ---
