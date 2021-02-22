@@ -144,6 +144,7 @@ h1 {
 
 h2 {
   font-size: var(--fontSize-5);
+  margin-top: var(--spacing-20);
 }
 
 h3 {

@@ -90,7 +90,7 @@ password.charAt(26) == 'f' &&
 password.charAt(31) == '0'
 ```
 
-Then, I wrote a Python script called `vd1solution.py`:
+Then, I wrote a Python script called `vd1solution.py`, that reads the lines from `vd1.txt` and sorts them in the correct order, then uses [regular expressions](https://en.wikipedia.org/wiki/Regular_expression) (regex) to single out each character of the flag.
 
 ```python
 # regex
@@ -123,6 +123,8 @@ for l in sortedlines:
 # print the flag as a string
 print("".join(flag))
 ```
+
+One obstacle I bumped into was the fact that the numbers in the parentheses aren't very easy to sort because the single-digit numbers don't start with `0`. This means the normal sorting function (`sort()`) would put numbers `10`-`19` before `2`, because the sorting function first looks at the first digit, `1`, which comes before `2`. Instead, I needed to use [natural sorting](https://en.wikipedia.org/wiki/Natural_sort_order), which treats multi-digit numbers as a single number.
 
 ```bash
 $ python3 vd1solution.py
