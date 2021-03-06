@@ -3,6 +3,7 @@
 this is a personal website i'm building for fun, based on the [gatsby starter blog](https://www.gatsbyjs.com/starters/gatsbyjs/gatsby-starter-blog).
 
 ## 🖋️ currently working on
+- notion school dashboard template
 - picogym writeups
 - adding tags to blog posts
 
