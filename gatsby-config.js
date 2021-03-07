@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Angela Traugott`,
+    title: `Angela's Blog`,
     blogTitle: `Angela's Blog`,
     author: {
       name: `Angela Traugott`,
@@ -23,6 +23,7 @@ module.exports = {
           `Inconsolata`,
           `Martel`,
           `Limelight`,
+          `Raleway\:300,400,500,600,700,800,900`,
           `Trispace`,
           `Playfair Display\:300,400,500,600,700,800,900`,
           `Space Mono`,
