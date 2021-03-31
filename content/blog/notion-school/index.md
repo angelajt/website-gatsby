@@ -1,12 +1,39 @@
 ---
-title: Welcome to my blog!
-date: "2021-02-02T22:27"
-tags: meta
+title: Notion: School Dashboard
+description: A simple school dashboard template with a stellar twist!
+date: "2021-03-31T16:22"
+tags: notion
 ---
-Hi, I'm Angela! This is my new blog where I plan to post about whatever's on my mind, as well as things I'm working on.
 
-This website was made with the help of [Gatsby](https://www.gatsbyjs.com/), although I'm hoping to switch to [Hugo](https://gohugo.io/) sometime in the near future. Although this is the first website I've made that's actually *been* on the web, I got most of my HTML/CSS experience making a very detailed website about Roborovski dwarf hamsters (of all things!) when I was around 9.
+![overview](overview2.png)
 
-![Roborovski Hamster Website (I was obsessed...)](robowebsite.png)
+[**✨ Link to Template**](https://www.notion.so/School-Dashboard-Template-7c3703592ca54494995773e475ee2599)
+*(Click "Duplicate" on the top right to get started!)*
 
-I'm a college freshman currently majoring in Computer Science at Las Positas College, and I'm planning to transfer to a UC and major in Astrophysics in a couple of years. Some things I enjoy doing in my free time include doodling (definitely not during class or anything...), reading (especially fantasy and sci-fi books!), playing piano, and journaling.
+I started using [Notion](https://www.notion.so) a little over a year ago to keep track of my academic life, and I've been in love with it ever since. I really like how versatile yet robust it is — I use it to write notes for my classes (especially for Computer Science, since it supports code blocks), plan out the courses I need for my degree, and keep track of all of my assignments. As someone who's usually terribly disorganized and forgetful, I always love finding new tools and methods to keep my life on track.
+
+I made a school dashboard recently, which organizes everything school-related into one holistic, easy-to-navigate view. This free-to-use template is a slight improvement of the school dashboard I personally use. Space headers can be found in [ESA/Hubble's wallpaper gallery](https://esahubble.org/images/archive/wallpapers/).
+
+## Features
+
+- A database to keep track of all of your past, current, and future **courses** — including prerequisites, meeting times, and more.
+- A database to keep track of your **assignments** — including course, due dates, and completion status.
+- An optional **academic plan** page with courses organized in a table view, best for long-term planning or brainstorming,.
+- An optional **course schedule** page with courses organized in a board view, best for sorting by semester/quarter/etc.
+- **Class notes** for every course.
+
+## How To Use
+
+To create a new course: 
+1. Click the little arrow next to the blue "New" button in the **Courses** section and select the "⭐ New Subject" template. 
+2. Now you can fill out the course information under the properties at the top, add a header, change the icon, etc
+
+(The above method also works if you're in the Academic Plan or Course Schedule page.)
+
+To start keeping track of assignments for your new course:
+1. Scroll down to the **Assignments** calendar and click on the "+" button on the day the assignment is due. 
+2. Under the "Course" property on the assignment's page, create a new option for your new course (you can change the color to match that of the course option you set above).
+3. Now navigate back to the dashboard and click on your new course.
+4. Under the **Assignments** section, click on "Filter" and select the course ("Where Course is \[course\]")
+
+(Still trying to figure out how to link the Courses and Assignments databases so that you don't have to create what's essentially the same course option twice, but I haven't figured out a clean way to do it.)
