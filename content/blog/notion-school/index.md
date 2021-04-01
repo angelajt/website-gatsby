@@ -14,6 +14,8 @@ I started using [Notion](https://www.notion.so) a little over a year ago to keep
 
 [I made a school dashboard with Notion recently](https://twitter.com/angelajtc/status/1361465004277395456), which organizes everything school-related into one holistic, easy-to-navigate view. This free-to-use template is a slight improvement of the school dashboard I personally use. Space headers can be found in [ESA/Hubble's wallpaper gallery](https://esahubble.org/images/archive/wallpapers/).
 
+Questions? Suggestions? Leave a comment down below or contact me on [Twitter](https://twitter.com/angelajtc)!
+
 ## Features
 
 - A database to keep track of all of your past, current, and future **courses** — including prerequisites, meeting times, and more.
