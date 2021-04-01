@@ -5,7 +5,7 @@ date: "2021-03-31T16:22"
 tags: notion
 ---
 
-![overview](overview2.png)
+![cover](cover.png)
 
 [**✨ Link to Template**](https://www.notion.so/School-Dashboard-Template-7c3703592ca54494995773e475ee2599)
 *(Click "Duplicate" on the top right to get started!)*
