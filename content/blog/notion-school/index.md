@@ -1,5 +1,5 @@
 ---
-title: Notion: School Dashboard
+title: Notion school dashboard template
 description: A simple school dashboard template with a stellar twist!
 date: "2021-03-31T16:22"
 tags: notion
