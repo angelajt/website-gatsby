@@ -30,7 +30,7 @@ Raven Boys* by Maggie Stiefvater.
 ## Klara and the Sun
 > by Kazuo Ishiguro
 
-A very sweet story set in the near future, told from the perspective of an AI robot named Klara. 
+A very sweet story set in the near future, told from the perspective of an AI robot. 
 Klara is exceptionally observant and smart, yet she views the world around her with an almost childlike 
 attitude, which is both endearing and somewhat tragic in its dramatic irony. Klara's observations 
 and her musings, as well as her interactions with other people, are evocative and poignant.
